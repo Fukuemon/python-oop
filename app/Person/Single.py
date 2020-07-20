@@ -5,10 +5,10 @@ Created on 2018/09/14
 class SingleSample():
     ''' サンプルの単体クラス'''
 
-    def __init__(self):
+    def __init__(self, first_name = None, family_name = None):
         ''' コンストラクタ '''
-        self.first_name  = None
-        self.family_name = None
+        self.first_name  = first_name
+        self.family_name = family_name
         self.full_name   = None
 
     def get_full_name(self):
