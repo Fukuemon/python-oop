@@ -15,9 +15,9 @@ if __name__ == '__main__':
     sys.path.append(path)
 
     from app.Person.Japanese import Japanese
-    #from app.Person.American import American
-    obj = Japanese()
-    #obj = American()
+    from app.Person.American import American
+    #obj = Japanese()
+    obj = American()
     #first_nameを設定
     obj.first_name = '直己'
     #family_nameを設定

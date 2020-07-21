@@ -15,6 +15,7 @@ if __name__ == '__main__':
     sys.path.append(path)
 
     from app.Person.Single import SingleSample
+    #インスタンス化
     obj = SingleSample()
     #名前の設定
     obj.first_name  = '直己'
