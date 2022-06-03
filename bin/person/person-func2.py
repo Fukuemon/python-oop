@@ -18,8 +18,8 @@ if __name__ == '__main__':
     #from app.Person import function as func
     #from app.Person.function import get_full_name
 
-    first_name    = '直己'
-    family_name   = '岡田'
+    first_name    = '太郎'
+    family_name   = '山田'
 
     full_name = func.get_full_name(first_name, family_name)
     #full_name = get_full_name(first_name, family_name)

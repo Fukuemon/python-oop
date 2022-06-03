@@ -16,12 +16,18 @@ if __name__ == '__main__':
 
     from app.Person.Japanese import Japanese
     from app.Person.American import American
-    #obj = Japanese()
-    obj = American()
+    obj_jp = Japanese()
+    obj_am = American()
     #first_nameを設定
-    obj.first_name = '直己'
+    obj_jp.first_name = '太郎'
+    obj_am.first_name = 'Taro'
     #family_nameを設定
-    obj.family_name = '岡田'
-    full_name = obj.get_full_name()
-    print(full_name)
-    obj.say_hello()
+    obj_jp.family_name = '山田'
+    obj_am.family_name = 'Yamada'
+    full_name_jp = obj_jp.get_full_name()
+    full_name_am = obj_am.get_full_name()
+    print('日本人:' + full_name_jp)
+    print('アメリカ人：' + full_name_am)
+    #say_helloメソッドを使う
+    obj_jp.say_hello()
+    obj_am.say_hello()
