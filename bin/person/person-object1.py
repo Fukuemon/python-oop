@@ -9,12 +9,16 @@ import os
 import sys
 
 if __name__ == '__main__':
+# ----------------------------------------------------------
+# パスを読み込み
     path = os.path.normpath(os.path.join(
         os.path.dirname(os.path.abspath(__file__)), '../../'
     ))
     sys.path.append(path)
 
     from app.Person.Single import SingleSample
+    
+# --------------------------------------------------------
     #インスタンス化
     obj = SingleSample()
     #名前の設定
