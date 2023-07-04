@@ -10,12 +10,15 @@
 import os,sys
 
 if __name__ == '__main__':
+# ----------------------------------------------
+    #パスを通してパッケージを読み込む
     path = os.path.normpath(os.path.join(
     os.path.dirname(os.path.abspath(__file__)),'../../'))
     sys.path.append(path)
 
     from app.Person.Japanese import Japanese
     from app.Person.American import American
+# ----------------------------------------------
     obj_jp = Japanese()
     obj_am = American()
     #first_nameを設定

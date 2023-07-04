@@ -9,6 +9,7 @@ from .Job import Job
 class Japanese(PersonAbstract, Job):
     '''
     日本人を扱うクラス
+    ここでもPersonAbstractとJobクラスを継承してる
     '''
 
     country = 'Japan'

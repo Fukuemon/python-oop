@@ -7,6 +7,7 @@ from .Abstract import PersonAbstract
 class American(PersonAbstract):
     '''
     アメリカ人を扱うクラス
+    PersonAbstractクラスを継承している
     '''
 
     country = 'U.S.A'
