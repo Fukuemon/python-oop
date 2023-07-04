@@ -18,9 +18,13 @@ class Japanese(PersonAbstract, Job):
         '''
         コンストラクタ
         '''
+        #カプセル化
+        #プロパティやメソッドはクラス外からアクセスを制限することができる
+        #super：親クラスのこと(親クラスのinitを実行する)
         super().__init__(first_name, family_name)
         self._access      = 1
         self.__no_acccess = 2
+        
 
     def get_full_name(self):
         '''
